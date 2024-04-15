@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+     .button{
+        width:150px;
+        height:150px;
+     }
+     #red{
+        background-color: red;
+     }
+     #green{
+        background-color: green;
+     }
+     #blue{
+        background-color: blue;
+     }
+     #yellow
+     {
+        background-color: yellow;
+     }
+    </style>
+</head>
+<body>
+<center>
+    <div class="canvas">
+        <h1>color schema switcher</h1>
+       <button class="button" id="red">red</button>
+       <button class="button" id="green">green</button><br>
+       <button class="button" id="blue">blue</button>
+       <button class="button" id="yellow">yellow</button>
+        <h2>
+            try clicking on one of the color above 
+            <span>to change the background color of this page!</span>
+        </h2>
+    </div>
+    </center>
+
+
+
+
+
+
+    <script>
+
+        const button=document.querySelectorAll('.button');
+
+        // console.log(button);
+        const body=document.querySelector("body");
+
+
+
+        button.forEach(function (button){
+           // console.log(button);
+            button.addEventListener('click',function kkkkkk(chai){
+
+               // console.log(chai);
+                 console.log(chai.target.id);//print in console content of button tag 
+                 console.log(chai.target);//print button tag with content
+
+
+                 if(chai.target.id=='red' && chai.target.id=='red')
+                 {
+                    body.style.backgroundColor=chai.target.id;
+                    chai.target.style.color="white";
+                    chai.target.style.fontSize="35px";
+                    chai.target.style.transition = "10s";
+                  
+
+
+                    
+                 }
+
+                 if(chai.target.id=='green' && chai.target.id=='green')
+                 {
+                    body.style.backgroundColor=chai.target.id;
+                    chai.target.style.color="black";
+                    chai.target.style.fontSize="35px";
+                    chai.target.style.transition = "10s";
+                 }
+
+                 if(chai.target.id=='blue' && chai.target.id=='blue')
+                 {
+                    body.style.backgroundColor=chai.target.id;
+                    chai.target.style.color="white";
+                    chai.target.style.fontSize="35px";
+                    chai.target.style.transition = "2.5s";
+                 }
+
+                 if(chai.target.id=='yellow' && chai.target.id=='yellow')
+                 {
+                    body.style.backgroundColor=chai.target.id;
+                    chai.target.style.color="hotpink";
+                    chai.target.style.fontSize="35px";
+                    chai.target.style.transition = "2s";
+                  //   chai.target.id.style.innerHTML="hello";
+
+                 }
+
+                // switch(chai.target.id)
+                // {
+                //     case chai.target.id=="red":
+                //         body.style.backgroundColor="red";
+                //         break;
+
+                   
+                      
+                // }
+
+
+
+
+            })
+        })
+
+
+
+
+        
+
+
+
+    </script>
+
+
+
+</body>
+</html>
